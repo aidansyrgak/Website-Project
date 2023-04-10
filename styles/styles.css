@@ -9,7 +9,7 @@ nav.about-table {
   background-color: #DC052D;
 }
 
-div.title-container {
+header {
   background-color: #DC052D;
   background-size: cover;
   height: 80px;
@@ -18,12 +18,12 @@ div.title-container {
   align-items: center;
 }
 
-nav.menu-table {
+nav {
 	display: table;
 	margin: 0 auto;
 }
 
-div.background-of-menu-table {
+div.navigation-container {
   display: flex;
   background-color: #bb0627;
 }
@@ -74,7 +74,8 @@ li.about-list-item {
 }
 
 li.player-list-item {
-  border: solid #bb0627
+  border: 2px solid #bb0627;
+  margin: 2px;
 }
 
 a.menu-item {
@@ -92,4 +93,47 @@ h1.website-title {
   color: white;
   -webkit-text-stroke-width: 0.2px;
   -webkit-text-stroke-color: black;
+}
+
+main h1 {
+  text-align: center;
+}
+
+main img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main.player h2 {
+  background-color: #0066B2;
+  color: aliceblue;
+}
+
+main.player section {
+  background-color: #e6f4f9;
+  margin-top: 10px;
+  border: #0066B2 0.3px solid;
+}
+
+section.player-stats li {
+  float: none;
+  text-align: left;
+  list-style-type: circle;
+}
+
+footer {
+  padding-top: 15px;
+  margin-top: 40px;
+  border-top: 1px solid #333;
+}
+
+footer p {
+  font-size: small;
+  margin: 0px;
+}
+
+footer a {
+  color: brown;
+  text-decoration: none;
 }
