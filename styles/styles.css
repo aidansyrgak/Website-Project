@@ -99,10 +99,25 @@ main h1 {
   text-align: center;
 }
 
+main p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+main ul {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 main img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+main.player {
+  margin-left: 11%;
+  margin-right: 11%;
 }
 
 main.player h2 {
@@ -136,4 +151,79 @@ footer p {
 footer a {
   color: brown;
   text-decoration: none;
+}
+
+@media screen and (max-width: 650px) {
+
+  nav.about-table {
+    background-color: transparent;
+    transform: translate(0%, 272%);
+  }
+
+  header {
+    margin-top: -6%;
+  }
+
+  nav.menu {
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+    padding: 0 0 8px 0;
+    margin: 0;
+    outline: 0;
+    text-align: left;
+  }
+  
+  nav.menu:before {
+    content: "\2630 \a0 Menu"; 
+  }
+  
+  nav.menu:focus {
+    pointer-events: none;
+  }
+  
+  nav.menu:focus .menu_dropdown {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  div.menu_dropdown {
+    width: auto;
+    margin: 3px 0 0 0;
+    padding-left: 4px;
+    border-radius: 3px;
+    border: 1px #333 solid;
+    pointer-events: auto;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 1s;
+    background: #FFF;
+  }
+  
+  div.menu_dropdown a {
+    background: transparent;
+    border: none;
+    outline: 0;
+    display: block;
+    text-decoration: none;
+    width: 100px;
+    padding: 5px;
+  }
+  
+  nav.menu p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  
+  nav.menu a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  nav.menu a:active {
+    background-color: #0066B2;
+  }
+
 }
